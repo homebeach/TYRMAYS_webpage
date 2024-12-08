@@ -1,0 +1,22 @@
+
+/*
+This CSS file contains info just for egbook. 
+
+You can customise egbook using the egbook.css NOT THIS FILE!
+*/
+
+BODY {margin:0px; padding:0px;font-family: Verdana, Helvetica, sans-serif; font-size:90%;}
+H1{font-size:150%; margin:1em;border-bottom:1px solid #FF9900; text-align:center;}
+H2{font-size:110%;color:black; padding-left:1em; border-bottom:1px solid #FF9900;}
+H3{font-size:100%; margin:1em;}
+P{font-size:90%; margin:1em;}
+
+IMG{border:0px;}
+
+.HeadLeftTD {background-color:#E6FF00; width:20%; border-bottom:1px solid black; 
+	border-right:1px solid black;}
+.HeadRightTD {background-color: #FF9900; border-bottom:1px solid black; padding:15pt; font-size:1.8em;}
+.BeforeCOM{color:white;}
+.COM{color:black;}
+
+.code{font-weight:bold; font-size:0.8em; color:blue; background-color:silver; padding:0.4em;}

@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+      <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><title>egbook Help File</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<link href="egbook.css" rel="stylesheet" />
+<link href="only-egbook.css" rel="stylesheet" /></head>
+
+<body>
+<!--START Heading Table-->
+	<table width="100%" cellpadding="0" cellspacing="0" border="0" class="HeadingTable">
+		<tr>
+			<td class="HeadLeftTD">
+				<!--eKstreme.com logo here?-->&nbsp;
+			</td>
+
+			<td class="HeadRightTD" colspan="2">
+				<span class="BeforeCOM">eKstreme</span><span class="COM">.com</span> 
+                                egbook
+			</td>
+		</tr>
+	</table>
+	<!--END Heading Table-->
+<h1>egbook 2.0 Help File</h1>
+
+<h2>Introduction</h2>
+<p>Thank you for downloading egbook! This help file will explain to you what egbook does 
+and how you can customise it completely so that it integrates seamlessly into your website.</p>
+
+<p>egbook is a guestbook script written in PHP. It stores the entries in text files, so you 
+do not need a database to use it.</p>
+
+<p>egbook allows you to have as many fields as you want. You can also make as many of them 
+mandatory so that users must fill these fields in.</p>
+
+<p>egbook can be completely customised. It comes with code for you to use so that you can 
+display the entry form and the entries anywhere you want on the page. This allows egbook
+to completely follow your website's design.</p>
+
+<p>egbook also supports smileys. You can use your own custom set of smileys, but egbook
+comes with a set that I made.</p>
+
+<p>On top of all of this, egbook is free for noncommercial use. Commercial users, please 
+see below - egbook is very affordable!</p>
+
+<p>Now onto the installation.... thanks again for using egbook! If you get stuck, please
+contact me; the details are found below.</p>
+
+<h2>Installation</h2>
+<p>Before we start: folders and directories are exactly the same thing. I will use them 
+
+<p class="EmRed">Note that you cannot upgrade from version 1.0 of egbook. Please install a fresh
+copy of egbook. This is because a lot of the new features are not compatible with the old 
+version. Sorry!</p>
+interchangeably.</p>
+<p>egbook comes as a ZIP file distribution. Please visit the 
+<a href="http://ekstreme.com/phplabs/egbook.php">egbook home page</a> to make sure you are using the latest
+version</p>
+
+<p>Unzip the file to somewhere on your computer. You will get a folder called egbook. 
+Inside this folder, there are 2 folders and several files.</p>
+
+<p>If you want to use the default egbook installation (i.e., you do not want any customisations), just upload 
+this whole folder to your web space. If you want to customise egbook, please read the sections below first.</p>
+
+<p>The next step, find inside your egbook installation folder a folder called 'entries'. It is inside the data
+folder. Unless you are using a Windows server, you need to set the permissions for the entries folder to be 
+666. How you do this varies with the FTP program you are using. Look for a command called 'permissions' or 
+CHMOD.</p>
+
+<p>Now your installation is complete! You can rename the egbook folder to something more useful, like 'guestbook'.
+If you use egbook, please drop me a message using the details below - I would love to take a look at your guestbook!</p>
+
+<h2>Customisation</h2>
+
+<p>egbook has several customisation features. To use it to the full potential, please read this section carefully.
+Some customisations are more difficult than others, but they are straightforward. If you need help, please 
+contact me using the details below.</p>
+
+<h3>Smileys</h3>
+<p>The easiest thing to customise is the smiley set that comes with egbook. Inside the icons folder (in your
+egbook folder), you will find a file for each smiley that egbook supports. Make your own and replace the 
+corresponding icon(s) in that folder.</p>
+
+<h3>Fields</h3>
+<p>One of the most powerful features of egbook is that it allows you an unlimited number of fields that you 
+define. That is, there are no hard-coded fields: You can define the fields and their names, and egbook will 
+work with all of them! Further, you can make as many of these fields mandatory, and egbook will not save an 
+entry unless all mandatory fields are filled in.</p>
+
+<p>These features are very easy to use though! I will now describe how to define your fields, and then how 
+to make them mandatory.</p>
+
+<p>Inside your egbook folder, there is another folder called 'data'. Inside that you will find a file called
+'fieldlist.txt'. Open this file using a text editor. Under Windows, Notepad will do. Under Linux, anything like
+gedit, vi, or emacs will do. If you want a good webmaster's text editor, you can see 
+<a href="http://ekstreme.com/digitalsmoke/freeware.php">my list of recommended freeware</a>.</p>
+
+<p>The fieldlist.txt file contains the field names, one per line. For example, if you want a field that users
+type in their height, type in on a separate line the word 'Height' (no quotes). <span class="EmRed">Careful: The field names
+are case sensitive!</span>. Type in/remove as many fields as you want (but read on...)</p>
+
+<p>To make a field mandatory, you simply add an asterisk at the end of the name. For example, to force users to 
+type in their height, type in on a separate line 'Height*' (no quotes). You can make as many fields as you want
+mandatory.</p>
+
+<p>However, not all fields are equal in the eyes of egbook. There are three field names that are special. These are:</p>
+<ul>
+	<li>Email</li>
+	<li>URL</li>
+	<li>Comment</li>
+</ul>
+
+<p>(Note that the names are case sensitive!)</p>
+
+<p>Why are they special? Because when egbook encounters and Email or a URL field, it turns it into an HTML link. Further
+URL fields are checked to see if they have the http:// prefix (actually, egbook checks for any protocol). If not, 
+one is added to make the link valid!</p>
+<p>The Comment field is special because when egbook finds a Comment field, it displays a textarea in the entry
+form. This allows users to type in multiple lines.</p>
+
+<p>This is the only difference between these three fields and the other fields. To make any of them mandatory,
+just add the asterisk as described above.</p>
+
+<p>Finally, just to make sure you know what is going: To display the entry form, egbook reads the fieldlist.txt file
+and then displays a field input for each one. If it finds a Comment field, egbook displays a textarea.</p>
+
+<h2>Website Integration</h2>
+<p>egbook can be made to integrate into your website as much as you want. If you do not want any form of 
+integration, then the default index.php file that comes with egbook will do the job for you.</p>
+
+<p>egbook allows you to control the following aspects completely:</p>
+<ul>
+	<li>Where, inside your HTML, to display the egbook entry form</li>
+	<li>Where, inside your HTML, to display your guestbook's entries</li>
+	<li>How the egbook entry form and entries look when displayed</li>
+</ul>
+
+<p>Now I will describe how to use each of those features. egbook works best if 
+the same PHP page is used to display the entry form and the entries. Also, this
+page is best left in the egbook installation folder. However, with 
+little or no tinkering, you can separate these into different pages if you want. Please
+contact me if you want more help with this.</p>
+
+<h3>Entry Form and Entries List</h3>
+<p>To display the entry form and entries, use the following code:</p>
+
+<div class="code">&lt;php<br />require &quot;egbook.php&quot;;<br />
+require &quot;egbookform.php&quot;;<br />require &quot;egbookdisplayentries.php&quot;;<br />?&gt;</div>
+
+<p>This bit of code will display the entry form immediately followed by the entries list.</p>
+
+<p>Before describing how to separate them, notice the first require statement. <span class="EmRed">Before
+you can display the entry form or the entries, you need to have this statement in your PHP page.</span></p>
+
+<p>The next line in the above code displays the entry form. You can move that line to wherever you want in 
+your PHP page.</p>
+
+<p>Likewise, to display the entries, use the last require line above.</p>
+<p>Note that the above code example assumes that the page that is displaying the guestbook is found inside 
+the folder where you installed egbook. If not, then the statements will have to change: instead of using 
+the filename as per above, you need to type in the full path to the file.</p>
+
+<h3>egbook CSS File</h3>
+<p>The last thing to customise is how egbook looks like. Everything is controlled using a cascading style 
+sheet (CSS) file. Inside the egbook folder, there are two CSS files; the one that you should edit is the 
+'egbook.css' file. Please do not edit the other one, as it controls how this installation file is displayed!</p>
+
+<p>Open the 'egbook.css' file using a text editor and edit the CSS as you see fit. There are some comments in there
+to guide you. If you get stuck, take a look at the HTML that egbook outputs (view the source of your guestbook page), 
+and you will get lots of information. If you still need more help, please contact me.</p>
+
+<h2>Finally</h2>
+<p>Thank you for taking the time to download egbook and read this help file! If you have any suggestions to improve
+egbook, please tell me! I always welcome user feedback!</p>
+<p>Also, please link to eKstreme.com from your website. I have a set of buttons and more instructions at
+<a href="http://ekstreme.com/linkback.php">the eKstreme.com linkback page</a>.</p>
+
+<h2>Licence</h2>
+<p>egbook is free for noncommercial use. For full details about what this means, please visit 
+<a href="http://ekstreme.com/paypal.php">this page</a>. Essentially, if you use egbook on a website for a company
+and the like, you have to pay.</p>
+
+<h2>Contact Details</h2>
+<p><a href="http://ekstreme.com/contact.php">Just fill in this form</a>. I am usually quick to reply, but sometimes
+I can be very busy and so will not reply promptly. Please be patient :)</p>
+
+<p>Thank you for using egbook!</p>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+;; Object html/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "html/"
+  :tables (list 
+             (semanticdb-table "main_en.html"
+    :major-mode 'html-mode
+    :tags '(("This is the main page" section nil nil [1 4]))
+    :file "main_en.html"
+    :pointmax 179
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "main_fi.html"
+    :major-mode 'html-mode
+    :tags '(("Yhdistyksen etusivu" section nil nil [1 4]))
+    :file "main_fi.html"
+    :pointmax 165
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0beta3"
+  :semanticdb-version "2.0beta3"
+  )

@@ -1,0 +1,39 @@
+REKISTERISELOSTE
+Henkilötietolaki (523/99) 10 §
+
+Rekisteriseloste laadittu 30.1.2007
+
+1. Rekisterinpitäjä
+
+    TYRMÄYS (Tampereen Yliopiston Raskaan Musiikin Ystävien Seura)
+    Yhteystiedot: Mikko Myllylä, Järvensivuntie 17 A 145, 33100 Tampere 
+    hallitus_at_mcmoka.fi (korvaa _at_ -> @)
+
+2. Rekisteriasioista vastaava henkilö ja/tai yhteyshenkilö
+
+    Petri Kotiranta
+    petri.kotiranta_at_uta.net (korvaa _at_ -> @)
+
+3. Rekisterin nimi
+
+    TYRMÄYS jäsenrekisteri
+
+4. Henkilötietojen käsittelyn tarkoitus (rekisterin käyttötarkoitus)
+
+    Jäsenyysasioiden hoitaminen
+
+5. Rekisterin tietosisältö
+
+    Jäsenen nimi, opiskelijanumero, pääaine, puhelinnumero, sähköpostiosoite, lempiorkesterit
+
+6. Säännönmukaiset tietolähteet
+
+    Jäsen itse.
+
+7. Säännönmukaiset tietojen luovutukset ja tietojen siirto EU:n tai Euroopan talousalueen ulkopuolelle
+
+    Tietoja ei luovuteta ulkopuolisille, kolmansille osapuolille, EU:n eikä ETA:n ulkopuolelle. 
+
+8. Rekisterin suojauksen periaatteet
+
+    Rekisteritietoihin pääsevät vain TYRMÄYS-kerhon hallituksen jäsenet. Tietoja sisältävää tiedostoa ei ole julkisesti saatavilla.

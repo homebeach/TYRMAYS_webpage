@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Tyrmäys</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="tyrmays.css" />
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+<img src="images/tyrmaysban.jpg" alt="Tyrmäys" />
+</div>
+
+
+<div class="pos_right">
+<h3>
+{if $action eq main}
+{#main#}
+{/if}
+{if $action eq news}
+{#news#}
+{/if}
+{if $action eq events}
+{#events#}
+{/if}
+{if $action eq links}
+{#links#}
+{/if}
+</h3>
+
+
+</div>
+
+
+<div class="pos_left">
+
+	{if $lang eq fi}
+
+	{if $details eq 'yes'}
+	<a href="index.php?action={$action}&lang=en&details=details&id={$eventid}">	
+	{else}
+	<a href="index.php?action={$action}&lang=en">	
+	{/if}
+	<img src="images/UKFlag.gif" alt="In English" /> 
+
+	</a>
+
+	{else}
+
+	{if $details eq 'yes'}
+	<a href="index.php?action={$action}&lang=fi&details=details&id={$eventid}">	
+	{else}
+	<a href="index.php?action={$action}&lang=fi">
+	{/if}
+
+	<img src="images/FinlandFlag.gif" alt="In Finnish" /> 
+	</a>
+	{/if}
+
+</div>
+
+
+
+<!--
+
+<div class="left">
+
+	{if $action eq main}
+	{#main#}
+	{else}
+	<a href="index.php?action=main&lang={$lang}">{#main#}</a>
+	{/if}
+	<hr size=1 noshade>
+
+	{if $action eq news}
+	{#news#}
+	{else}
+	<a href="index.php?action=news&lang={$lang}">{#news#}</a>
+	{/if}
+	<hr size=1 noshade>
+
+	{if $action eq events}
+	{#events#}
+	{else}
+	<a href="index.php?action=events&lang={$lang}">{#events#}</a>
+	{/if}
+	<hr size=1 noshade>
+
+	{if $action eq board}
+	board
+	{else}
+	<a href="index.php?action=board&lang={$lang}">board</a>
+	{/if}
+	<hr size=1 noshade>
+
+	{if $action eq info}
+	info
+	{else}
+	<a href="index.php?action=info&lang={$lang}">info</a>
+	{/if}
+	<hr size=1 noshade>
+
+	{if $action eq rules}
+	rules
+	{else}
+	<a href="index.php?action=rules&lang={$lang}">rules</a>
+	{/if}
+	<hr size=1 noshade>
+
+	{if $action eq membership}
+	membership
+	{else}
+	<a href="index.php?action=membership&lang={$lang}">membership</a>
+	{/if}
+	<hr size=1 noshade>
+
+	{if $action eq contact}
+	contact
+	{else}
+	<a href="index.php?action=contact&lang={$lang}">contact</a>
+	{/if}
+	<hr size=1 noshade>
+
+	{if $action eq links}
+	{#links#}
+	{else}
+	<a href="index.php?action=links&lang={$lang}">{#links#}</a>
+	{/if}
+	<br>
+</div>
+
+<div class="content">
+
+

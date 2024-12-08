@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>IRCApplet</title>
+
+<script language=javascript>
+function parseQueryString () {
+ var str = str ? "" : document.location.search;
+ var query = str.charAt(0) == '?' ? str.substring(1) : str;
+  var args = new Object();
+  if (query) {
+    var fields = query.split('&');
+    for (var f = 0; f < fields.length; f++) {
+      var field = fields[f].split('=');
+      args[unescape(field[0].replace(/\+/g, ' '))] =  unescape(field[1].replace(/\+/g, ' '));
+    }
+  }
+  return args;
+}
+
+function popupWin(link,attribs) {
+    var popupWin = null;
+    popupWin = window.open(link,'winPopup',attribs);  
+}
+
+function startChat() {
+var args = parseQueryString ();
+document.write("<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>\n");
+document.write("<html>\n");
+document.write("<head>\n");
+document.write("<title>Chat page</title>\n");
+document.write("</head>\n");
+
+document.write("   <body bgcolor=black text=white> \n");
+document.write("<h1>Tyrmäyksen IRC-kanava</h1><hr>\n");
+nick = args['nick'];
+chan = '#tyrmays';
+pass = args['pass'];
+server = 'irc.cc.tut.fi';
+bkgrnd = 'background.gif';
+document.write("<applet name='applet' code=IRCApplet.class archive='irc.jar,pixx.jar' width=640 height=400>\n");
+document.write("<param name='CABINETS' value='irc.cab,pixx.cab,securedirc.cab'>\n");
+
+document.write("<param name='pixx:language' value='pixx-english'>\n");
+document.write("<param name='pixx:lngextension' value='lng'>\n");
+document.write("<param name='nick' value='" + nick + "'>\n");
+document.write("<param name='alternatenick' value='" + nick + "??'>\n");
+document.write("<param name='quitmessage' value='PJIRC 2.0 forever!'>\n");
+document.write("<param name='name' value='PJirc 2.0 Test User'>\n");
+document.write("<param name='host' value='" + server + "'>\n");
+document.write("<param name='port' value='6667'>\n");
+document.write("<param name='gui' value='pixx'>\n");   
+document.write("<param name='asl' value='true'>\n");
+document.write("<param name='command1' value='" + pass + "'>\n");
+document.write("<param name='command2' value='/join " + chan + "'>\n");
+document.write("<param name='highlight' value='true'>\n");
+document.write("<param name='style:bitmapsmileys' value='true'>\n");
+document.write("<param name='style:smiley1' value=':) img/sourire.gif'>\n");
+document.write("<param name='style:smiley2' value=':-) img/sourire.gif'>\n");
+document.write("<param name='style:smiley3' value=':-D img/content.gif'>\n");
+document.write("<param name='style:smiley4' value=':d img/content.gif'>\n");
+document.write("<param name='style:smiley5' value=':-O img/OH-2.gif'>\n");
+document.write("<param name='style:smiley6' value=':o img/OH-1.gif'>\n");
+document.write("<param name='style:smiley7' value=':-P img/langue.gif'>\n");
+document.write("<param name='style:smiley8' value=':p img/langue.gif'>\n");
+document.write("<param name='style:smiley9' value=';-) img/clin-oeuil.gif'>\n");
+document.write("<param name='style:smiley10' value=';) img/clin-oeuil.gif'>\n");
+document.write("<param name='style:smiley11' value=':-( img/triste.gif'>\n");
+document.write("<param name='style:smiley12' value=':( img/triste.gif'>\n");
+document.write("<param name='style:smiley13' value=':-| img/OH-3.gif'>\n");
+document.write("<param name='style:smiley14' value=':| img/OH-3.gif'>\n");
+document.write("<param name='style:smiley15' value=\":'( img/pleure.gif\">\n");
+document.write("<param name='style:smiley16' value=':$ img/rouge.gif'>\n");
+document.write("<param name='style:smiley17' value=':-$ img/rouge.gif'>\n");
+document.write("<param name='style:smiley18' value='(H) img/cool.gif'>\n");
+document.write("<param name='style:smiley19' value='(h) img/cool.gif'>\n");
+document.write("<param name='style:smiley20' value=':-@ img/enerve1.gif'>\n");
+document.write("<param name='style:smiley21' value=':@ img/enerve2.gif'>\n");
+document.write("<param name='style:smiley22' value=':-S img/roll-eyes.gif'>\n");
+document.write("<param name='style:smiley23' value=':s img/roll-eyes.gif'>\n");
+document.write("<param name='style:sourcefontrule1' value='none+Channel all DialogInput 12'>\n");
+document.write("<param name='style:sourcefontrule2' value='none+ChanList all DialogInput 12'>\n");
+document.write("<param name='style:highlight' value='true'>\n");
+document.write("<param name='style:backgroundimage' value='false'>\n");
+document.write("<param name='style:backgroundimage1' value='all all-" + chan + " 1 " + bkgrnd + "'>\n");
+document.write("<param name='style:floatingasl' value='true'>\n");
+document.write("<param name='pixx:styleselector' value='true'>\n");
+document.write("<param name='pixx:setfontonstyle' value='true'>\n");
+document.write("<param name='pixx:highlightnick' value='true'>\n");
+document.write("<param name='pixx:nickfield' value='true'>\n");
+document.write("<param name='pixx:configurepopup' value='true'>\n");
+document.write("<param name='pixx:popupmenustring1' value='Whois'>\n");
+document.write("<param name='pixx:popupmenustring2' value='Query'>\n");
+document.write("<param name='pixx:popupmenustring3' value='Ban'>\n");
+document.write("<param name='pixx:popupmenustring4' value='kick + Ban'>\n");
+document.write("<param name='pixx:popupmenustring5' value='--'>\n");
+document.write("<param name='pixx:popupmenustring6' value='Op'>\n");
+document.write("<param name='pixx:popupmenustring7' value='DeOp'>\n");
+document.write("<param name='pixx:popupmenustring8' value='Voice'>\n");
+document.write("<param name='pixx:popupmenustring9' value='DeVoice'>\n");
+document.write("<param name='pixx:popupmenustring10' value='--'>\n");
+document.write("<param name='pixx:popupmenustring11' value='Ping'>\n");
+document.write("<param name='pixx:popupmenustring12' value='Version'>\n");
+document.write("<param name='pixx:popupmenustring13' value='Time'>\n");
+document.write("<param name='pixx:popupmenustring14' value='Finger'>\n");
+document.write("<param name='pixx:popupmenucommand1_1' value='/Whois %1'>\n");
+document.write("<param name='pixx:popupmenucommand2_1' value='/Query %1'>\n");
+document.write("<param name='pixx:popupmenucommand3_1' value='/mode %2 -o %1'>\n");
+document.write("<param name='pixx:popupmenucommand3_2' value='/mode %2 +b %1'>\n");
+document.write("<param name='pixx:popupmenucommand4_1' value='/mode %2 -o %1'>\n");
+document.write("<param name='pixx:popupmenucommand4_2' value='/mode %2 +b %1'>\n");
+document.write("<param name='pixx:popupmenucommand4_3' value='/kick %2 %1'>\n");
+document.write("<param name='pixx:popupmenucommand6_1' value='/mode %2 +o %1'>\n");
+document.write("<param name='pixx:popupmenucommand7_1' value='/mode %2 -o %1'>\n");
+document.write("<param name='pixx:popupmenucommand8_1' value='/mode %2 +v %1'>\n");
+document.write("<param name='pixx:popupmenucommand9_1' value='/mode %2 -v %1'>\n");
+document.write("<param name='pixx:popupmenucommand11_1' value='/CTCP PING %1'>\n");
+document.write("<param name='pixx:popupmenucommand12_1' value='/CTCP VERSION %1'>\n");
+document.write("<param name='pixx:popupmenucommand13_1' value='/CTCP TIME %1'>\n");
+document.write("<param name='pixx:popupmenucommand14_1' value='/CTCP FINGER %1'>\n");
+document.write("<param name='pixx:color5' value='000000'>\n");
+document.write("<param name='pixx:color6' value='000000'>\n");
+document.write("<param name='pixx:color7' value='000000'>\n");
+
+
+document.write("</applet>\n");
+}
+</script>
+</head>
+
+<BODY>
+<body onload='startChat();'>
+</body>
+
+</BODY>
+</html> 

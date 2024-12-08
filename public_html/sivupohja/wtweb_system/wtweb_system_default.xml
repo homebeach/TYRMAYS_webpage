@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<pages>
+	<title>test</title>
+	<page>
+		<name>Login</name>
+		<id>login</id>
+		<type>hidden</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/login.php</file>
+	</page>
+	<page>
+		<name>Article</name>
+		<id>article</id>
+		<type>hidden</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/article.php</file>
+	</page>
+	<page>
+		<name>Gallery</name>
+		<id>gallery</id>
+		<type>hidden</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/gallery.php</file>
+	</page>
+	<page>
+		<name>Add article</name>
+		<id>addarticle</id>
+		<type>hidden</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/addarticle.php</file>
+	</page>
+	<page>
+		<name>Edit article</name>
+		<id>editarticle</id>
+		<type>hidden</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/editarticle.php</file>
+	</page>
+	<page>
+		<name>Add picture</name>
+		<id>addpicture</id>
+		<type>hidden</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/addpic.php</file>
+	</page>
+	<page>
+		<name>Edit page</name>
+		<id>editpage</id>
+		<type>hidden</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/editpage.php</file>
+	</page>
+	<page>
+		<name>Backup pages</name>
+		<id>backup</id>
+		<type>hidden</type>
+		<edit>no</edit>
+		<backup>false</backup>
+		<file>wtweb_system/backup.php</file>
+	</page>
+	<page>
+		<name>Setup</name>
+		<id>create</id>
+		<type>admin</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/create.php</file>
+	</page>
+	<page>
+		<name>Logout</name>
+		<id>logout</id>
+		<type>private</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/logout.php</file>
+	</page>
+	<page>
+		<name>Create page</name>
+		<id>createpage</id>
+		<type>admin</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/createpage.php</file>
+	</page>
+	<page>
+		<name>Delete page</name>
+		<id>deletepage</id>
+		<type>admin</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/deletepage.php</file>
+	</page>
+	<page>
+		<name>Admin</name>
+		<id>admin</id>
+		<type>private</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/admin.php</file>
+	</page>
+	<page>
+		<name>Reset</name>
+		<id>reset</id>
+		<type>admin</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/reset.php</file>
+	</page>
+	<page>
+		<name>Create login</name>
+		<id>createlogin</id>
+		<type>hidden</type>
+		<edit>no</edit>
+		<backup>0</backup>
+		<file>wtweb_system/createlogin.php</file>
+	</page>
+</pages>

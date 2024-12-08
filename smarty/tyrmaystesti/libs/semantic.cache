@@ -1,0 +1,41 @@
+;; Object libs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libs/"
+  :tables (list 
+   (semanticdb-table "sql.lib.php"
+    :major-mode 'c-mode
+    :tags 'nil
+    :file "sql.lib.php"
+    :pointmax 3608
+    )
+   (semanticdb-table "setup.php"
+    :major-mode 'c-mode
+    :tags '(("require" function (:prototype-flag t :arguments (("" variable (:type ("APP_DIR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98 107])) :type ("php" type (:type "class") nil nil)) nil [3 128]) ("require" function (:prototype-flag t :arguments (("" variable (:type ("APP_DIR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [137 146])) :type "int") nil [129 175]) ("require" function (:prototype-flag t :arguments (("" variable (:type ("SMARTY_DIR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [184 196])) :type "int") nil [176 217]) ("require" function (:prototype-flag t :type "int") nil [218 236]))
+    :file "setup.php"
+    :pointmax 1012
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "association.lib.php"
+    :major-mode 'c-mode
+    :tags 'nil
+    :file "association.lib.php"
+    :pointmax 13959
+    )
+   (semanticdb-table "maintenance.lib.php"
+    :major-mode 'c-mode
+    :tags '(("maint_show_events" function (:type ("function" type (:type "class") nil nil)) nil [92 252]) ("maint_show_news" function (:type ("function" type (:type "class") nil nil)) nil [336 484]) ("maint_add_news_form" function (:type ("function" type (:type "class") nil nil)) nil [535 618]) ("maint_add_event_form" function (:type ("function" type (:type "class") nil nil)) nil [670 755]) ("maint_delete_event" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [787 796])) :type ("function" type (:type "class") nil nil)) nil [759 1012]) ("maint_confirm_delete_event_form" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1057 1066])) :type ("function" type (:type "class") nil nil)) nil [1016 1257]) ("maint_modify_event_form" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1296 1305])) :type ("function" type (:type "class") nil nil)) nil [1263 1583]) ("do_event_modify" function (:arguments (("" variable (:type ("$table_fields" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1612 1626]) ("" variable (:type ("$eventid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1627 1636])) :type ("function" type (:type "class") nil nil)) nil [1587 1942]) ("maint_modify_event" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1975 1984])) :type ("function" type (:type "class") nil nil)) nil [1947 4213]) ("maint_show_main_menu" function (:type ("function" type (:type "class") nil nil)) nil [4271 4351]) ("maint_add_event" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4638 4647])) :type ("function" type (:type "class") nil nil)) nil [4613 6002]) ("maint_add_news" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6030 6039])) :type ("function" type (:type "class") nil nil)) nil [6006 6646]) ("maint_change_passwd_form" function (:type ("function" type (:type "class") nil nil)) nil [6680 6898]) ("maint_change_passwd" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6931 6940])) :type ("function" type (:type "class") nil nil)) nil [6902 7864]) ("maint_login_form" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7922 7931]) ("" variable (:type ("$message" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7932 7941])) :type ("function" type (:type "class") nil nil)) nil [7896 8135]) ("maint_login" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8176 8185])) :type ("function" type (:type "class") nil nil)) nil [8155 8720]) ("main" function (:arguments (("" variable (:type ("$request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8739 8748])) :type ("function" type (:type "class") nil nil)) nil [8725 10374]) ("maint_show_events" function (:type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_add_event_form" function (:type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_delete_event" function (:arguments (("" variable (:type ("$requestvars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375])) :type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_confirm_delete_event_form" function (:arguments (("" variable (:type ("$requestvars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375])) :type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_modify_event_form" function (:arguments (("" variable (:type ("$requestvars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375])) :type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("do_event_modify" function (:arguments (("" variable (:type ("$table_fields" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375]) ("" variable (:type ("$eventid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375])) :type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_modify_event" function (:arguments (("" variable (:type ("$requestvars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375])) :type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_show_main_menu" function (:type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_add_event" function (:arguments (("" variable (:type ("$requestvars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375])) :type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_add_news" function (:arguments (("" variable (:type ("$requestvars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375])) :type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_change_passwd_form" function (:type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_change_passwd" function (:arguments (("" variable (:type ("$requestvars" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375])) :type ("function" type (:type "class") nil nil)) nil [10375 10375]) ("maint_login_form" function (:arguments (("" variable (:type ("$message" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10375 10375])) :type ("function" type (:type "class") nil nil)) nil [10375 10375]))
+    :file "maintenance.lib.php"
+    :pointmax 10380
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "assoc.lib.php"
+    :major-mode 'c-mode
+    :tags 'nil
+    :file "assoc.lib.php"
+    :pointmax 12669
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0beta3"
+  :semanticdb-version "2.0beta3"
+  )

@@ -1,0 +1,47 @@
+
+/*
+This is the egbook.css file.
+
+Here you can customise how egbook looks and integrate it
+into your webpage. 
+
+If you need help, please contact me using the form
+at http://ekstreme.com/contact.php
+
+Thank you for using egbook.
+
+*/
+
+
+/*
+The following HTML tags are defined here, but remove them 
+to make them behave like the rest of your website.
+
+BODY {margin:0px; padding:0px;font-family: Verdana, Helvetica, sans-serif; font-size:90%;}
+H1{font-size:150%; margin:1em;border-bottom:1px solid #FF9900; text-align:center;}
+H2{font-size:110%;color:black; padding-left:1em; border-bottom:1px solid #FF9900;}
+H3{font-size:100%; margin:1em;}
+P{font-size:90%; margin:1em;}
+
+INPUT{border:1px solid black; background-color:silver;}
+TEXTAREA{border:1px solid black; background-color:silver;}
+*/
+
+/*Some classes for egbook only*/
+.egbookDiv{}
+.egbookIconsList{border:1px solid silver; vertical-align:top; padding:0.3em; font-size:0.9em;}
+.egbookCommentTD{vertical-align:top;}
+.egbookFooter{text-align:center; font-size:0.8em;}
+.egbookFieldTitle{border:1px solid black; font-weight:bold; font-size:0.9em; width:20%; 
+	padding:0.3em; vertical-align:top;}
+.egbookTable{border:1px solid silver;}
+.egbookField{border:1px solid black; font-size:0.9em; padding:0.3em; vertical-align:top;}
+
+/*How egbook displays links*/
+a:link{text-decoration: none; color:#0066FF; border:0px;}
+a:visited{text-decoration: none; color:#0066FF; border:0px;}
+a:hover{text-decoration: underline; color:#0066FF; border:0px;}
+a:active{text-decoration: none; color:silver; border:0px;}
+
+/*The following is used for emphasis, like error messages, and for marking mandatory fields*/
+.EmRed{font-weight:bold; color:red;}

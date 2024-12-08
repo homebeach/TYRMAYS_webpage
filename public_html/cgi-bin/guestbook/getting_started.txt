@@ -1,0 +1,48 @@
+
+##################
+
+Copyright (C) 2001 - 2006, active-scripts.net. All rights reserved.
+
+If this is the first time you have used this script, please see 
+readme.txt for installation instructions.
+
+
+##################
+
+Once you have successfully installed this script, there are a few
+things you really MUST do first...
+
+1 - Remember the url of the Control Panel. You can get to the control
+Panel by adding ?action=control_panel to the end of the address
+of your guestbook, e.g.
+http://www.yoursite.com/cgi-bin/gb/guestbook.cgi?action=control_panel
+
+2 - Go to the Control Panel and click on Standard Preferences Manager.
+
+3 - Scroll down to section D2 and enter your email address. DO THIS NOW!!
+
+4 - Go to D5 and enter the name of your guestbook.
+
+5 - Go to D6 and enter the text you wish to go to users you add messages.
+
+6 - Go to section 6 and enter your backup preferences
+
+7 - Go to section B1 and choose which fields you would like to use.
+
+8 - THIS BIT IS IMPORTANT - Go to section A and set up your preferences.
+This is important because of the amount of spam that is currently being
+added to guestbooks. A1 requires users to confirm their messages via email.
+You might find this very useful in stopping spam. A3 allows you to block
+urls in messages. This is VERY useful in blocking spam as most spammers
+simply want to leave the address of a website on your guestbook. A4 stops
+bots from harvesting emails from your site.
+
+9 - You can now go through the rest of the settings in Standard Preferences
+Manager. After this, you should go back to the Control Panel and go to the 
+Language Preferences Manager to change the text that appears in the 
+guestbook.
+
+10 - Go to the Password Manager and change your password.
+
+Enjoy.
+
